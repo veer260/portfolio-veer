@@ -1,0 +1,26 @@
+@font-face {
+  font-family:__Inter_d65c78;
+  font-style:normal;
+  font-weight:100 900;
+  font-display:swap;
+  src:url(../public/fonts/inter/a34f9d1faa5f3315-s.p.woff2) format("woff2");
+  /* unicode-range:u+0460-052f,
+  u+1c80-1c8a,
+  u+20b4,
+  u+2de0-2dff,
+  u+a640-a69f,
+  u+fe2e-fe2f */
+}
+
+p {
+  font-family: 'Instrument Serif', 'san-serif';
+  /* text-transform: uppercase; */
+}
+
+p span {
+  font-style: italic;
+}
+
+.main p {
+  font-family: __Inter_d65c78, 'san-serif';
+}
