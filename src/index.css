@@ -5,12 +5,52 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background-color: black;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --font-normal: '__Inter_d65c78';
+  --size-medium: 0.875rem;
+  --secondary-card-color: hsla(200deg, 0%, 32%, 0.7);   
+  --shadow-color: 220 3% 15%;
+  
+  /* --shadow-elevation-low:
+    0.8px 0.8px 1.3px hsl(var(--shadow-color) / 0.34),
+    1.4px 1.4px 2.2px -1.2px hsl(var(--shadow-color) / 0.34),
+    3.3px 3.3px 5.3px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium:
+    0.8px 0.8px 1.3px hsl(var(--shadow-color) / 0.36),
+    2.7px 2.7px 4.3px -0.8px hsl(var(--shadow-color) / 0.36),
+    6.8px 6.7px 10.7px -1.7px hsl(var(--shadow-color) / 0.36),
+    16.6px 16.4px 26.3px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-high:
+    0.8px 0.8px 1.3px hsl(var(--shadow-color) / 0.34),
+    4.8px 4.8px 7.6px -0.4px hsl(var(--shadow-color) / 0.34),
+    9px 8.9px 14.2px -0.7px hsl(var(--shadow-color) / 0.34),
+    14.8px 14.7px 23.5px -1.1px hsl(var(--shadow-color) / 0.34),
+    23.7px 23.4px 37.5px -1.4px hsl(var(--shadow-color) / 0.34),
+    37px 36.6px 58.5px -1.8px hsl(var(--shadow-color) / 0.34),
+    56.2px 55.6px 88.9px -2.1px hsl(var(--shadow-color) / 0.34),
+    82.8px 81.9px 131px -2.5px hsl(var(--shadow-color) / 0.34); */
+  --shadow-elevation-low:
+    0.8px 0.8px 1.3px hsl(var(--shadow-color) / 0.34),
+    1.4px 1.4px 2.2px -1.2px hsl(var(--shadow-color) / 0.34),
+    3.3px 3.3px 5.3px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium:
+    0.8px 0.8px 1.3px hsl(var(--shadow-color)),
+    2.7px 2.7px 4.3px -0.8px hsl(var(--shadow-color)),
+    6.8px 6.7px 10.7px -1.7px hsl(var(--shadow-color)),
+    16.6px 16.4px 26.3px -2.5px hsl(var(--shadow-color));
+  --shadow-elevation-high:
+    0.8px 0.8px 1.3px hsl(var(--shadow-color) / 0.34),
+    4.8px 4.8px 7.6px -0.4px hsl(var(--shadow-color) / 0.34),
+    9px 8.9px 14.2px -0.7px hsl(var(--shadow-color) / 0.34),
+    14.8px 14.7px 23.5px -1.1px hsl(var(--shadow-color) / 0.34),
+    23.7px 23.4px 37.5px -1.4px hsl(var(--shadow-color) / 0.34),
+    37px 36.6px 58.5px -1.8px hsl(var(--shadow-color) / 0.34),
+    56.2px 55.6px 88.9px -2.1px hsl(var(--shadow-color) / 0.34),
+    82.8px 81.9px 131px -2.5px hsl(var(--shadow-color) / 0.34);
 }
 
 :root {
@@ -125,11 +165,14 @@
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
+  padding-inline-start: 0px;
 }
 
 /* 2. Remove default margin */
 * {
   margin: 0;
+  padding: 0;
+  
 }
 
 /* 3. Enable keyword animations */
@@ -144,6 +187,10 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+}
+
+ul, ol {
+  list-style: none;
 }
 
 /* 6. Improve media defaults */

@@ -4,23 +4,39 @@
   font-weight:100 900;
   font-display:swap;
   src:url(../public/fonts/inter/a34f9d1faa5f3315-s.p.woff2) format("woff2");
-  /* unicode-range:u+0460-052f,
-  u+1c80-1c8a,
-  u+20b4,
-  u+2de0-2dff,
-  u+a640-a69f,
-  u+fe2e-fe2f */
+
 }
 
-p {
-  font-family: 'Instrument Serif', 'san-serif';
-  /* text-transform: uppercase; */
+.wrapper {
+  /* overflow: hidden; */
+  /* transform-style: preserve-3d;
+  perspective: 1500px; */
+
 }
 
-p span {
-  font-style: italic;
+.max-width-wrapper {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
-.main p {
-  font-family: __Inter_d65c78, 'san-serif';
+.grid-wrapper {
+  width: 100%;
+  overflow: hidden;
+  height: 130vh;
+  background-color: var(--white);
+  margin-top: -64px;
+  isolation: isolate;
+  position: relative;
+  /* background-color: red; */
+
+
+}
+
+
+
+.grid-wrapper::after {
+
 }

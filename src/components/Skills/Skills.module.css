@@ -1,0 +1,36 @@
+.skillsContainer {
+    
+  
+}
+
+.cardsContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Instrument Serif', sans-serif;
+    margin-bottom: 48px;
+}
+
+.text {
+    text-align: justify;
+    font-family: '__Inter_d65c78';
+    color: var(--gray-1100);
+    font-size: 1.2rem;
+    margin-top: 48px;
+
+    
+}
+
+.text span {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--gray-1200);
+    text-transform: capitalize;
+
+}

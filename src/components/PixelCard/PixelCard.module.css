@@ -1,0 +1,64 @@
+.canvasWrapper {
+    width: fit-content;
+    position: relative;
+    border: 2px solid;
+    border-radius: 4px;
+    border-color: var(--svg-wrapper-border);
+    transition: all 100ms ease-in;
+    flex: 1;
+    
+    
+    min-width: 180px;
+    max-width: 240px;
+
+
+    /* box-shadow: -0px 1px 2px rgba(74, 69, 69, 0.05),
+        -1px 3px 7px rgba(74, 69, 69, 0.09),
+        -2px 6px 16px rgba(74, 69, 69, 0.14),
+        -3px 10px 28px rgba(74, 69, 69, 0.18),
+        -5px 16px 44px rgba(74, 69, 69, 0.23); */
+
+
+
+
+
+
+}
+
+.canvasWrapper:hover {
+    transition: all 400ms ease-out;
+    transition-delay: 100ms;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(
+                circle at 50% 50%,
+                black 5%,
+                transparent 100%
+                ); 
+  opacity: 0.95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  transition: opacity 300ms ease;
+}
+
+.overlay svg {
+    position: absolute;
+    width: 20%;
+    /* stroke: var(--gray-700);
+    fill: var(--svg-color); */
+    transition: all 100ms ease-out;
+    filter: grayscale(2.5);
+}
+
+.overlay:hover svg {
+    transition: all 300ms ease-out;
+    transform: scale(1.2);
+    filter: grayscale(0);
+
+}
+
+

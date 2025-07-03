@@ -1,0 +1,15 @@
+.mask {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 30%, white 100%);
+  pointer-events: none;
+}
+
+.mask p {
+    position: fixed;
+    top: 70vh;
+    margin-left: 200px;
+    color: var(--blue-900);
+    font-size: 4rem;
+    font-family: "Instrument Serif", sans-serif;
+}

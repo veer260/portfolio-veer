@@ -1,0 +1,17 @@
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: var(--gray-1100);
+    height: 200vh;
+}
+.text {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+.text:first-of-type {
+    color: white;
+}
+
