@@ -12,16 +12,27 @@
     color: var(--blue-900);
     font-size: 4rem;
     font-family: "Instrument Serif", sans-serif;
-      animation: vanish ease-in forwards;
-    animation-range: exit 0% exit 100%;
-
-    animation-timeline: --grid-timeline;
+    animation: vanish ease-in forwards;
+    animation-range: entry 10% entry 40%;
+    animation-timeline: --about-timeline;
 }
 
 @keyframes vanish {
+
+  50%{
+    filter: brightness(200%);
+    color: white;
+    opacity: 0.8;
+    filter: brightness(200%) blur(2px) drop-shadow(2px 4px 5px white);;
+
+
+  }
     to{
-        opacity: 0;
-        transform: rotate(30deg);
+      opacity: 0;
+      color: white;
+      filter: brightness(50%) blur(0px) drop-shadow(2px 4px 5px white);;
+
+        /* transform: rotate(30deg); */
     }
     
 }

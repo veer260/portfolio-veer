@@ -161,7 +161,7 @@
   --token-function: var(--pink-400);
   --token-punctuation: var(--blue-600);
     /* timeline for grid */
-  timeline-scope: --grid-timeline;
+  timeline-scope: --grid-timeline, --about-timeline;
 }
 
 /* 1. Use a more-intuitive box-sizing model */

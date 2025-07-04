@@ -11,7 +11,8 @@
     view-timeline-name: --grid-timeline;
     view-timeline-axis: block;
     view-timeline-inset: auto;
-    
+    border: 2px solid deeppink;
+
    
     /* transform:  rotateY(-20deg) rotateX(40deg); */
 
