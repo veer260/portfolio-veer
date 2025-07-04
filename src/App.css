@@ -11,6 +11,10 @@
   /* overflow: hidden; */
   /* transform-style: preserve-3d;
   perspective: 1500px; */
+  background-color: white;
+    animation: toWhite ease-in forwards;
+  animation-timeline: --about-timeline;
+  animation-range: entry 30% entry 70%;
 
 }
 
@@ -20,6 +24,7 @@
   margin-right: auto;
   padding-left: 32px;
   padding-right: 32px;
+
 }
 
 .grid-wrapper {
@@ -36,7 +41,12 @@
 }
 
 
-
-.grid-wrapper::after {
-
+@keyframes toWhite {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: black;
+  }
+  
 }

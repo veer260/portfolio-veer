@@ -1,13 +1,12 @@
-import React from 'react'
+import React from 'react';
+import styles from './Emphasised.module.css'
 
 function Emphasised({children}) {
     return (
-        <strong style={{color: 'var(--gray-1200)'}}>
-            <span>
+            <span className={styles.emphasised} style={{color: 'var(--gray-1200)'}}>
                 {children}
             </span>
             
-        </strong>
     )
 }
 

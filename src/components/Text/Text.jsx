@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import styles from './Text.module.css'
 
 function Text({children, style}) {
     return (
-        <p style={{...style}}>
+        <p className={styles.text} style={{...style}}>
             {children}
         </p>
     )

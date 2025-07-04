@@ -1,6 +1,7 @@
 
 import './App.css'
 import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 import Grid from './components/Grid/Grid';
 import Header from './components/Header/Header';
 import Mask from './components/Mask/Mask';
@@ -28,6 +29,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Contact />
 
 
       </div>

@@ -1,8 +1,5 @@
 .projectsWrapper {
     margin-top: 64px;
-    
-
-
 }
 .projectsSlider {
     position: relative;
@@ -113,4 +110,28 @@ box-shadow: -2px 2px 9px rgba(3, 7, 18, 0.11),
   
     /* image-orientation: flip; */
     object-fit: fill;
+}
+
+.miniProject {
+    margin-top: 24px;
+    animation: slide-in ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% contain 20%;
+
+
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(110px) ;
+        filter: blur(12px);
+        opacity: 0.1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0xp);
+    }
+    
 }

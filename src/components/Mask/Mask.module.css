@@ -17,6 +17,16 @@
     animation-timeline: --about-timeline;
 }
 
+/* @keyframes trigger {
+    0% {
+      transform: translateX(-200px);
+      tran
+    }
+    100% {
+
+    }
+} */
+
 @keyframes vanish {
 
   50%{

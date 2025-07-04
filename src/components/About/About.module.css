@@ -4,10 +4,11 @@
     gap: 32px;
     color: var(--gray-1100);
     /* height: 200vh; */
-     animation: unblur ease-out forwards;
+     /* animation: unblur ease-out forwards; */
     animation-timeline: view();
     animation-range: entry 0% contain 50%;
     view-timeline: --about-timeline block auto;
+    padding-top: 64px;
 }
 .text {
     font-size: 1.5rem;
@@ -23,10 +24,10 @@
 
 @keyframes unblur {
     from {
-        filter: blur(8px)
+        filter: blur(8px);
     }
     to {
-        filter: blur(0px)
+        filter: blur(0px);
     }
     
 }
