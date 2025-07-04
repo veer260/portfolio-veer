@@ -1,7 +1,11 @@
 .transitioningText {
     font-style: italic;
     mix-blend-mode: darken;
+  
+     border: 1px solid red;
+  background: yellow;
+
     /* font-family: monospace; */
     /* text-transform: uppercase; */
-
 }
+

@@ -160,6 +160,8 @@
   --token-keyword: var(--blue-700);
   --token-function: var(--pink-400);
   --token-punctuation: var(--blue-600);
+    /* timeline for grid */
+  timeline-scope: --grid-timeline;
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -187,6 +189,7 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+
 }
 
 ul, ol {

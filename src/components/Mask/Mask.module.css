@@ -12,4 +12,16 @@
     color: var(--blue-900);
     font-size: 4rem;
     font-family: "Instrument Serif", sans-serif;
+      animation: vanish ease-in forwards;
+    animation-range: exit 0% exit 100%;
+
+    animation-timeline: --grid-timeline;
+}
+
+@keyframes vanish {
+    to{
+        opacity: 0;
+        transform: rotate(30deg);
+    }
+    
 }

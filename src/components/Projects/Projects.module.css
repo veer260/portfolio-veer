@@ -25,12 +25,12 @@
     margin: auto;
     width: 250px;
     aspect-ratio: 3/4;
-    /* border: 2px solid deeppink; */
     border-radius: 12px;
     display: grid;
     place-content: center;
     background-color: hsl(103, 85%, 26%);
     transition: transform 200ms ease-in;
+    will-change: transform;
 
          /* to hide image's corners */
     overflow: hidden;
