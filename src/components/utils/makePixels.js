@@ -1,6 +1,6 @@
 import { pinks, reds } from "./colorArrays";
 import Pixel from "./Pixel";
-import {range, rangeForDecimal}from "./Range";
+import {range, rangeForDecimal}from "./range";
 
 
 function getDistancefromCenter(cx, cy, x,y) {
