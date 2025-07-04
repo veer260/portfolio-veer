@@ -13,7 +13,7 @@ function Projects() {
             <div className={styles.projectsSlider}>
                 {
                     images.map((img) =>  <div key={img} className={styles.imageWrapper}>
-                                            <img src={`../public/images/${img}.png`} alt=""/>
+                                            <img src={`/images/${img}.png`} alt=""/>
                                         </div>
                                 )
                 }
