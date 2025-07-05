@@ -5,7 +5,7 @@ import Text from '../Text/Text';
 
 function Contact() {
     return (
-        <div className={styles.wrapper}>
+        <div id="contact" className={styles.wrapper}>
             <Heading level={3} style={{fontSize: "2rem", marginTop: "48px", textAlign: 'left'}}>Want to get in touch? Or just say Hi?</Heading>
             <Text>
                Drop me a line at zarvisalpha258@gmail.com

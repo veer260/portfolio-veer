@@ -3,7 +3,7 @@ import styles from './About.module.css';
 
 function About() {
     return (
-        <div className={styles.textWrapper}>
+        <div id="about" className={styles.textWrapper}>
             <p className={styles.text}>
                Hi! I'm Veer, a frontend engineer based in Uttar Pradesh. Welcome to my corner of the Internet, where I showcase my work, craft, unfinished or imperfect projects, and the many other things I'm exploring. &nbsp;
             </p>

@@ -12,7 +12,7 @@ function Grid() {
 
 
     return (
-        <div className={styles.grid}>
+        <div id="home" className={styles.grid}>
            {
             columns
            } 

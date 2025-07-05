@@ -15,10 +15,25 @@ function Header() {
             </div>
             <nav className={styles.navWrapper}>
                 <ul className={styles.navList}>
-                    <li className={styles.item}>Index</li>
-                    <li className={styles.item}>About</li>
+
+                    <li  className={styles.item}>
+                       <a href="#home"> Index</a>
+                    </li>
+
+                    <li className={styles.item}>
+                       <a href="#about"> About</a>
+                    </li>
+
+                    <li className={styles.item}>
+                       <a href="#work"> Work</a>
+                    </li>
+
+                    <li className={styles.item}>
+                       <a href="#contact"> Contact</a>
+                    </li>
+                    {/* <li className={styles.item}>About</li>
                     <li className={styles.item}>Work</li>
-                    <li className={styles.item}>Contact</li>
+                    <li className={styles.item}>Contact</li> */}
                 </ul>
             </nav>
             
