@@ -26,9 +26,12 @@ function Projects() {
                     Ever since I started working with JS and CSS, I was fascinated by the idea of reproducing beautiful animations such as glowy buttons, <Emphasised>3d-effects</Emphasised>  in CSS and <Emphasised>SVG animations</Emphasised> . Balancing the physical aspect of these effects and aesthetics for a pleasing output was the most challenging part of this exploratory work.
                 </Text>
                 <article className={styles.miniProject}>
-                    <a href="http://portfolio-veer-p9pe.vercel.app/" target='_blank' >
-                         <Heading level={4} style={{fontSize: "1.4rem", color: 'var(--gray-1100)' , textAlign: 'left', fontStyle: 'italic'}} >Fancy Button</Heading>
-                    </a>
+                 
+                         <Heading level={4} style={{fontSize: "1.4rem", color: 'var(--gray-1100)' , textAlign: 'left', fontStyle: 'italic'}} >
+                               <a href="http://portfolio-veer-p9pe.vercel.app/" target='_blank' >
+                               Fancy Button
+                               </a>
+                            </Heading>
                
                     <Text style={{fontSize: "1.1rem"}} >This is a beautiful button made with radial gradient, dotted background and some tricky css animations</Text>
                 </article>

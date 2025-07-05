@@ -1,6 +1,19 @@
 .projectsWrapper {
     margin-top: 64px;
 }
+
+.projectsWrapper h4 {
+    transition: transform 100ms ease-out;
+
+    display: inline-block;
+}
+
+.projectsWrapper a:hover h4 {
+    transform: translateX(20px);
+    font-style: italic;
+    transition: transform 300ms ease-out;
+
+}
 .projectsSlider {
     position: relative;
     height: 450px;
