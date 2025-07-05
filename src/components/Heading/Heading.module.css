@@ -3,5 +3,14 @@
     text-align: center;
     color: 'var(--gray-1100)';
     font-size: 1.5rem;
+    margin-top: 48px;
     /* margin-bottom: 8px; */
+}
+
+@media (max-width: 450px) {
+    .heading{
+        margin-top: 12px;
+
+    }
+    
 }

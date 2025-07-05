@@ -19,19 +19,23 @@ function Projects() {
                 }
             </div>
             <div className={styles.CSSLab}>
-                <Heading level={3} style={{fontSize: '2rem', marginTop: '48px'}}  >
+                <Heading level={3} style={{fontSize: '2rem'}}  >
                     CSS laboratory
                 </Heading>
-                <Text style={{color: 'var(--gray-1000)', fontSize: '1.2rem', textAlign: 'justify'}} >
+                <Text style={{color: 'var(--gray-1000)', fontSize: '1.1rem', textAlign: 'justify'}} >
                     Ever since I started working with JS and CSS, I was fascinated by the idea of reproducing beautiful animations such as glowy buttons, <Emphasised>3d-effects</Emphasised>  in CSS and <Emphasised>SVG animations</Emphasised> . Balancing the physical aspect of these effects and aesthetics for a pleasing output was the most challenging part of this exploratory work.
                 </Text>
                 <article className={styles.miniProject}>
                  
-                         <Heading level={4} style={{fontSize: "1.4rem", color: 'var(--gray-1100)' , textAlign: 'left', fontStyle: 'italic'}} >
-                               <a href="http://portfolio-veer-p9pe.vercel.app/" target='_blank' >
-                               Fancy Button
-                               </a>
-                            </Heading>
+                        
+                    <a href="http://portfolio-veer-p9pe.vercel.app/" target='_blank' >
+                        <Heading level={4} style={{fontSize: "1.4rem", color: 'var(--gray-1100)' , textAlign: 'left', fontStyle: 'italic'}} >   
+                              Fancy Button
+                        </Heading>
+
+                          
+
+                    </a>
                
                     <Text style={{fontSize: "1.1rem"}} >This is a beautiful button made with radial gradient, dotted background and some tricky css animations</Text>
                 </article>
@@ -45,8 +49,8 @@ function Projects() {
             </div>
 
             <div className={styles.JSLab}>
-                <Heading level={4} style={{fontSize: '2rem', 'margin-top': '48px'}} >JS Sorcery</Heading>
-                <Text style={{color: 'var(--gray-1000)', fontSize: '1.2rem', textAlign: 'justify'}}>These are some projects that required a 'more than healthy" amount of JS. Making these increased my confidence in my core skills altogether turning me into a good developer. </Text>
+                <Heading level={3} style={{fontSize: '2rem', marginTop: '48px', textAlign: 'center'}} >JS Sorcery</Heading>
+                <Text style={{color: 'var(--gray-1000)', fontSize: '1.1rem', textAlign: 'justify'}}>These are some projects that required a 'more than healthy" amount of JS. Making these increased my confidence in my core skills altogether turning me into a good developer. </Text>
                 <article className={styles.miniProject}>
                      <a href="https://canvas-shimmer.vercel.app/" target='_blank' >
                         <Heading level={4} style={{fontSize: "1.4rem", color: 'var(--gray-1100)' , textAlign: 'left', fontStyle: 'italic'}} >Shimmer effect card</Heading>
@@ -71,12 +75,12 @@ function Projects() {
             </div>
 
             <div className={styles.ReactLab}>
-                <Heading level={4} style={{fontSize: '2rem', 'margin-top': '48px'}} >"Big" Projects </Heading>
-                <Text style={{color: 'var(--gray-1000)', fontSize: '1.2rem', textAlign: 'justify'}}>
+                <Heading level={3} style={{fontSize: '2rem', 'margin-top': '48px'}} >"Big" Projects </Heading>
+                <Text style={{color: 'var(--gray-1000)', fontSize: '1.1rem', textAlign: 'justify'}}>
                     Projects with large code bases. Made with <Emphasised>React</Emphasised>, <Emphasised>JS</Emphasised> and <Emphasised>CSS</Emphasised>. State management done on <Emphasised>Redux</Emphasised>. These projects were a great learning experience culminating different technoologies to give a proper project that is useful for other people. 
                 </Text>
                 <article className={styles.miniProject}>
-                    <a href="" target='_blank'>
+                    <a href="https://pokdex-app.vercel.app/" target='_blank'>
                             <Heading level={4} style={{fontSize: "1.4rem", color: 'var(--gray-1100)' , textAlign: 'left', fontStyle: 'italic'}} >Pokedex </Heading>
 
                     </a>
@@ -84,7 +88,7 @@ function Projects() {
                     <Text style={{fontSize: "1.1rem"}} >As a boy who grew up binge-watching cartoons like a madman, I had some idea that I will build something like this as soon as I'll be able to. Works like the one shown in the animated series. Search pokemons, track their locations, see evolutions. Overall, a fun project.</Text>
                 </article>
                 <article className={styles.miniProject}>
-                    <a href="" target='_blank'>
+                    <a href="https://drawing-tool-two.vercel.app/" target='_blank'>
                           <Heading level={4} style={{fontSize: "1.4rem", color: 'var(--gray-1100)' , textAlign: 'left', fontStyle: 'italic'}} >Drawing tool</Heading>
 
                     </a>

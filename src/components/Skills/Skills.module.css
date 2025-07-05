@@ -4,14 +4,18 @@
 }
 
 .cardsContainer {
-    display: flex;
     gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+
+
 }
 
 .heading {
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    /* font-size: clamp(1.3rem, 9.1vw - 1.2rem, 3rem); */
+    /* font-size: clamp(1.5rem, 8vw - 0.7rem, 3rem); */
+    font-size: clamp(2rem, 5.3vw + 0.5rem, 3rem);
     text-align: center;
     font-family: 'Instrument Serif', sans-serif;
     margin-bottom: 32px;
@@ -22,7 +26,8 @@
     text-align: justify;
     font-family: '__Inter_d65c78';
     color: var(--gray-1100);
-    font-size: 1.2rem;
+    /* font-size: 1.3rem; */
+    font-size: clamp(1rem, 1.6vw + 0.5rem, 1.3rem);
     margin-top: 48px;
 
     
@@ -33,5 +38,14 @@
     font-weight: 500;
     color: var(--gray-1200);
     text-transform: capitalize;
+
+}
+
+@media (max-width: 450px) {
+    .cardsContainer{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        /* background-color: yellow; */
+    }
 
 }

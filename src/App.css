@@ -27,6 +27,13 @@
 
 }
 
+@media (max-width: 450px) {
+  .max-width-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .grid-wrapper {
   width: 100%;
   overflow: hidden;

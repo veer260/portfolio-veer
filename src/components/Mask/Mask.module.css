@@ -8,9 +8,9 @@
 .mask p {
     position: fixed;
     top: 70vh;
-    margin-left: 200px;
+    margin-left: 20vw;
     color: var(--blue-900);
-    font-size: 4rem;
+    font-size: clamp(1.4rem, 13.9vw - 2.5rem, 4rem);
     font-family: "Instrument Serif", sans-serif;
     animation: vanish ease-in forwards;
     animation-range: entry 10% entry 40%;

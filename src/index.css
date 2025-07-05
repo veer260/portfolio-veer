@@ -160,6 +160,9 @@
   --token-keyword: var(--blue-700);
   --token-function: var(--pink-400);
   --token-punctuation: var(--blue-600);
+  --diagonal-shuffleX: 300; 
+  --diagonal-shuffleY: 150;
+  --horizontal-shuffle: 90;
     /* timeline for grid */
   timeline-scope: --grid-timeline, --about-timeline;
 }
