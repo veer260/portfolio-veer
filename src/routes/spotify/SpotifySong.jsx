@@ -34,7 +34,7 @@ const song = {
 function SpotifySong() {
 
  
-  const { data, error, isLoading } = useSWR('https://portfolio-backend-sqog.onrender.com/playing', fetcher, {
+  const { data, error, isLoading } = useSWR('https://portfolio-backend-sqog.onrender.com/spotify/playing', fetcher, {
     revalidateIfStale: true,
     revalidateOnFocus: false,
     revalidateOnReconnect: false,
