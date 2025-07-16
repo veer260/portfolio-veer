@@ -1,10 +1,45 @@
+.text {
+    position: fixed;
+    top: 65vh;
+    margin-left: 20vw;
+    color: var(--gray-1100);
+    font-size: clamp(1.4rem, 13.9vw - 2.5rem, 4rem);
+    font-family: "Instrument Serif", sans-serif;
+    animation: vanish ease-in forwards;
+    animation-range: entry 10% entry 40%;
+    animation-timeline: --about-timeline;
+}
 .transitioningText {
     font-style: italic;
-    mix-blend-mode: darken;
-  
+}
+
+.secretText {
+  position: absolute;
+  font-size: 1.1rem;
+  width: 30ch;
+  color: var(--gray-1000);
+  font-family: "Instrument Serif", sans-serif;
+}
 
 
-    /* font-family: monospace; */
-    /* text-transform: uppercase; */
+
+@keyframes vanish {
+
+  50%{
+    filter: brightness(200%);
+    /* color: white; */
+    opacity: 0.8;
+    filter: brightness(200%) blur(2px) drop-shadow(2px 4px 5px white);;
+
+
+  }
+    to{
+      opacity: 0;
+      /* color: white; */
+      filter: brightness(50%) blur(0px) drop-shadow(2px 4px 5px white);;
+
+        /* transform: rotate(30deg); */
+    }
+    
 }
 

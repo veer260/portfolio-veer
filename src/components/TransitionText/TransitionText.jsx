@@ -24,7 +24,6 @@ function transition( next, timing) {
         }
         const newWord = newWordArray.join('');
         iterations++;
-       console.log('calling setText');
     setText(newWord);
 
         if(iterations >= timing ) {
@@ -48,10 +47,16 @@ function transition( next, timing) {
     },[idx]);
 
     return (
-        <p>
+        <>
+        <p className={styles.text}>
             The online home <br />
             of Veer's <span className={styles.transitioningText}>{text}</span>
+          <span style={{display: 'block'}}  className={styles.secretText}>Pet the cat to find what Veer's vibin' to</span>
+
         </p>
+
+        </>
+        
     )
 }
 

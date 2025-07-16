@@ -1,7 +1,7 @@
 .mask {
-  position: absolute;
+  /* position: absolute; */
   inset: 0;
-  background: radial-gradient(circle at center, transparent 30%, white 100%);
+  /* background: radial-gradient(circle at center, transparent 30%, white 100%); */
   pointer-events: none;
 }
 
@@ -26,23 +26,3 @@
 
     }
 } */
-
-@keyframes vanish {
-
-  50%{
-    filter: brightness(200%);
-    color: white;
-    opacity: 0.8;
-    filter: brightness(200%) blur(2px) drop-shadow(2px 4px 5px white);;
-
-
-  }
-    to{
-      opacity: 0;
-      color: white;
-      filter: brightness(50%) blur(0px) drop-shadow(2px 4px 5px white);;
-
-        /* transform: rotate(30deg); */
-    }
-    
-}

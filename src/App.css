@@ -11,10 +11,10 @@
   /* overflow: hidden; */
   /* transform-style: preserve-3d;
   perspective: 1500px; */
-  background-color: white;
-    animation: toWhite ease-in forwards;
-  animation-timeline: --about-timeline;
-  animation-range: entry 30% entry 70%;
+  background-color: black;
+    /* animation: toWhite ease-in forwards; */
+  /* animation-timeline: --about-timeline;
+  animation-range: entry 30% entry 70%; */
 
 }
 
@@ -27,6 +27,12 @@
 
 }
 
+.home{
+  height: 80vh;
+}
+
+
+
 @media (max-width: 450px) {
   .max-width-wrapper {
     padding-left: 20px;
@@ -36,12 +42,13 @@
 
 .grid-wrapper {
   width: 100%;
-  overflow: hidden;
-  height: 130vh;
-  background-color: var(--white);
+  /* overflow: hidden; */
+  /* height: 100vh; */
+  /* background-color: var(--white); */
   margin-top: -64px;
   isolation: isolate;
   position: relative;
+  pointer-events: none;
   /* background-color: red; */
 
 

@@ -1,0 +1,67 @@
+
+.catWrapper {
+  height: 80vh;
+
+  background-color: transparent;
+
+  position: relative;
+  /* border: 2px solid deeppink; */
+}
+.catCanvas {
+    border: 2px solid gray;
+    will-change: transform;
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: float 1500ms ease-out alternate infinite;
+    background: conic-gradient(from 90deg at 0% 0%, #4c4c3182, #7075455f, #4d6f07, #336b0d);
+box-shadow: inset -1px -1px 7px rgba(227, 244, 42, 0.23),
+  -5px -3px 28px rgba(227, 244, 42, 0.18),
+  -12px -8px 63px rgba(227, 244, 42, 0.14);
+  outline: 2px solid hsl(60, 37%, 29%);
+  outline-offset: 2px;
+filter: drop-shadow(10px 10px 0.75rem rgba(65, 79, 12, 0.352));
+}
+
+.musicWrapper {
+  position: absolute;
+}
+
+
+/* HTML: <div class="tooltip">This is a Tooltip with a gradient or solid coloration and with border radius </div> */
+.tooltip {
+  color: #fff;
+  font-size: 18px;
+  max-width: 28ch;
+  text-align: center;
+  position: absolute;
+  left: -200px;
+
+}
+.tooltip {
+  --s: 1.5em; /* triangle size */
+  --p: 50%; /* triangle position (0%:top 100%:bottom) */
+  --r: 1em; /* the radius */
+
+  padding: 1em;
+  border: var(--s) solid #0000;
+  border-radius: calc(var(--r) + var(--s));
+  background: border-box linear-gradient(-45deg,#5E412F,#78C0A8); /* the coloration */
+  --_m:/var(--s) var(--s) no-repeat;
+  --_p: clamp(var(--r) + 3*var(--s)/2,var(--p),100% - var(--r) - 3*var(--s)/2);
+  -webkit-mask:
+    linear-gradient(#000 0 0) padding-box,
+    radial-gradient(100% 100% at 0 100%,#0000 99%,#000 102%) 0 calc(var(--_p) + var(--s)/2) var(--_m),
+    radial-gradient(100% 100% at 0 0   ,#0000 99%,#000 102%) 0 calc(var(--_p) - var(--s)/2) var(--_m);
+}
+
+@keyframes float {
+  0%{
+    transform: translateY(-18%) translate(-50%, -50%);;
+  }
+  100%{
+    transform: translateY(12%) translate(-50%, -50%);
+
+  }
+  
+}

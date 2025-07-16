@@ -24,7 +24,8 @@
 }
 
 .imageWrapper svg g {
-    animation: svgColorChange ease-out forwards;
+    stroke: white;
+    /* animation: svgColorChange ease-out forwards; */
     animation-timeline: --about-timeline;
     animation-range: exit -20% exit 0%;
 }
@@ -55,8 +56,8 @@
     justify-content: space-between;
     font-family: var(--font-normal);
     font-size: var(--size-medium);
-    color: black;
-    animation: colorChange ease-out forwards;
+    color: var(--white);
+    /* animation: colorChange ease-out forwards; */
     animation-timeline: --about-timeline;
     animation-range: exit -20% exit 0%;
 }

@@ -8,7 +8,7 @@
     animation-timeline: view();
     animation-range: entry 0% contain 50%;
     view-timeline: --about-timeline block auto;
-    padding-top: 64px;
+    padding-top: 128px;
 }
 
 @media( max-width: 450px) {
